@@ -400,6 +400,10 @@ header .header-menu.show-menu-mobile {
   width: 100px;
 }
 
+.header-active {
+  color: #CF9163;
+}
+
 footer {
   padding-top: 70px;
 }
