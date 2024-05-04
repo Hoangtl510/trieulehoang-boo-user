@@ -1,0 +1,89 @@
+.contact {
+    margin-top: 70px;
+    @media (max-width: 767px) {
+        margin-top: 40px;
+    }
+    @media (max-width: 489px) {
+        margin-top: 30px;
+    }
+    .contact-content {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1199px) {
+            justify-content: unset;
+            gap: 30px;
+        }
+        @media (max-width: 767px) {
+            flex-direction: column;
+            margin-top: 40px;
+        }
+        @media (max-width: 489px) {
+            margin-top: 30px;
+        }
+        .contact-content__left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @media (max-width: 1199px) {
+                width: calc(50% - 15px);
+            }
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+            .contact-content__left--item {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .contact-content-left__item__title {
+                    font-size: 16px;
+                }
+                .contact-content-left__item__subtitle {
+                    font-size: 16px;
+                    color: #666666;
+                }
+            }
+        }
+        .contact-content__right {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @media (max-width: 1199px) {
+                width: calc(50% - 15px);
+            }
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+            .contact-content__right--item {
+                .contact-content-left__item--title {
+                    font-size: 16px;
+                    .required {
+                        color: #FB0505
+                    }
+                }
+                > input {
+                    margin-top: 10px;
+                    width: 442px;
+                    height: 44px;
+                    border: 1px solid #D6D5D5;
+                    padding-left: 15px;
+                    @media (max-width: 1199px) {
+                        width: 100%;
+                    }
+                }
+                .input-messenger {
+                    height: 200px;
+                }
+                > button {
+                    width: 100%;
+                    padding: 14px 0;
+                    font-size: 18px;
+                    border: none;
+                    background-color: #CF9163;
+                    color: white;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

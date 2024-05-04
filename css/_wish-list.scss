@@ -1,0 +1,135 @@
+.wish-list {
+    margin-top: 70px;
+    @media (max-width: 767px) {
+        margin-top: 40px;
+    }
+    @media (max-width: 489px) {
+        overflow: auto;
+        margin-top: 30px;
+    }
+    table, td, th {
+        border: 1px solid #D6D5D5;
+    }
+    > table {
+        width: 100%;
+        border-collapse: collapse;
+        @media (max-width: 489px) {
+            width: 500px;
+        }
+        > thead {
+            > tr {
+                > td {
+                    text-align: center;
+                    padding: 22px 0;
+                    background-color: #EBEBEB;
+                    color: black;
+                    font-weight: 500;
+                    font-size: 18px;
+                    @media (max-width: 1280px) {
+                        font-size: 16px;
+                    }
+                    @media (max-width: 990px) {
+                        padding: 15px 0;
+                    }
+                    @media (max-width: 768px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        > tbody {
+            > tr {
+                > td {
+                    padding: 10px 15px;
+                    @media (max-width:1280px) {
+                        padding: 10px;
+                    }
+                    @media (max-width:575px) {
+                        padding: 5px;
+                    }
+                    .card-product-image {
+                        display: flex;
+                        align-items: center;
+                        gap: 45px;
+                        padding-left: 50px;
+                        @media (max-width: 1440px) {
+                            padding-left: 30px;
+                        }
+                        @media (max-width: 990px) {
+                            padding-left: 10px;
+                            gap: 10px;
+                        }
+                        > i {
+                            color: #BDBDBD;
+                            font-size: 24px;
+                            @media (max-width:1280px) {
+                                font-size: 20px;
+                            }
+                            @media (max-width:768px) {
+                                font-size: 16px;
+                            }
+                        }
+                        > img {
+                            width: 85px;
+                            @media (max-width:1280px) {
+                                width: 75px;
+                            }
+                            @media (max-width:990px) {
+                                width: 65px;
+                            }
+                            @media (max-width:768px) {
+                                width: 55px;
+                            }
+                        }
+                    }
+                    .card-product-name {
+                        font-size: 16px;
+                        @media (max-width:1280px) {
+                            font-size: 14px;
+                        }
+                        @media (max-width:990px) {
+                            font-size: 12px;
+                        }
+                        @media (max-width:768px) {
+                            white-space: nowrap; 
+                            width: 130px; 
+                            overflow: hidden;
+                            text-overflow: ellipsis; 
+                        }
+                        @media (max-width:575px) {
+                            width: 80px; 
+                        }
+                    }
+                    .card-product-price {
+                        text-align: center;
+                        font-size: 16px;
+                        @media (max-width:1280px) {
+                            font-size: 14px;
+                        }
+                        @media (max-width:990px) {
+                            font-size: 12px;
+                            width: fit-content;
+                        }
+                    }
+                    .card-product-button {
+                        width: 100%;
+                        padding: 15px 70px;
+                        background-color: #CF9163;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        @media (max-width: 1199px) {
+                            padding: 15px 50px;
+                        }
+                        @media (max-width: 989px) {
+                            padding: 10px 0px;
+                        }
+                        @media (max-width: 767px) {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

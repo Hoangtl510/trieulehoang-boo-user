@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOO</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://redpervn.github.io/fa/css/all.min.css?fbclid=IwAR2VnCVu3fZyZybhEPHqAoRF9xJd2ZJZ43gCLfQokvfv6X5YJv1_V3HNSyw"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link />
+    <!-- link css -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="header" id="header-web">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="search">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <i
+              class="icon-search fa-solid fa-magnifying-glass"
+              id="iconSearch"
+            ></i>
+            <i
+              class="fa-solid fa-bars icon-show-menu-mobile"
+              id="iconMenuMobile"
+            ></i>
+          </div>
+          <div class="search-mobile" id="inputSearchMobile">
+            <i class="fa-solid fa-xmark" id="iconCloseSearch"></i>
+            <input type="text" placeholder="Tìm kiếm..." />
+          </div>
+          <div class="logo">
+            <img src="/images/logo-boo.png" alt="logo" />
+          </div>
+          <div class="action">
+            <a href="./wish-list.html" class="icon-link"><i class="fa-solid fa-heart"></i></a>
+            <a href="./add-to-card.html" class="icon-link"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="./profile.html" class="icon-link">
+              <img src="./images/profile/avatar.png"/>
+            </a>
+          </div>
+        </div>
+        <div class="header-menu" id="menuMoBile">
+          <div class="icon-close-menu-mobile">
+            <i class="fa-solid fa-xmark" id="iconCloseMenuMobile"></i>
+          </div>
+          <a href="/home.html">Trang chủ</a>
+          <div class="diamond diamond-menu"></div>
+          <a href="./about-us.html">Về chúng tôi</a>
+          <div class="diamond diamond-menu"></div>
+          <a href="/product.html">Sản phẩm</a>
+          <div class="diamond diamond-menu"></div>
+          <a href="./blog.html">Blog</a>
+          <div class="diamond diamond-menu"></div>
+          <a href="./contact.html">Liên hệ</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="default-banner">
+        <img src="./images/banner.png"/>
+        <div class="default-banner__title">Thanh toán</div>
+      </div>
+      <div class="container">
+        <h1 class="pay-title">Thông tin thanh toán</h1>
+        <div class="pay-wrapper">
+          <div class="pay-left">
+            <div class="title">Thông tin người dùng</div>
+            <div class="info">
+              <div class="info-content">
+                  <input class="input-info" type="text" value="Triệu Lê Hoàng"/>
+                  <div class="info-item">
+                      <input class="input-info" type="text" value="trieulehoang555@gmail.com"/>
+                      <input class="input-info" type="text" value="0349510201"/>
+                  </div>
+                  <div class="info-item">
+                      <select class="input-info" id="country" name="country">
+                          <option value="Việt Nam">Việt Nam</option>
+                          <option value="Trung Quốc">Trung Quốc</option>
+                          <option value="Nga">Nga</option>
+                          <option value="Mỹ">Mỹ</option>
+                      </select>
+                      <select  class="input-info" id="city" name="city">
+                          <option value="Hà Nội">Hà Nội</option>
+                          <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                          <option value="Hải Phòng">Hải Phòng</option>
+                          <option value="Quảng Ninh">Quảng Ninh</option>
+                      </select>
+                  </div>
+                  <div class="info-item">
+                      <select class="input-info" id="district" name="district">
+                          <option value="Thanh Trì">Thanh Trì</option>
+                          <option value="Thanh Xuân">Thanh Xuân</option>
+                          <option value="Hoàng Mai">Hoàng Mai</option>
+                          <option value="Ba Đình">Ba Đình</option>
+                      </select>
+                      <select  class="input-info" id="ward" name="ward">
+                          <option value="Tả Thanh Oai">Tả Thanh Oai</option>
+                          <option value="Đại Áng">Đại Áng</option>
+                          <option value="Văn Điển">Văn Điển</option>
+                          <option value="Vạn Phúc">Vạn Phúc</option>
+                      </select>
+                  </div>
+              </div>
+            </div>
+            <div class="ship">
+                <div class="title">Phương thức vận chuyển</div>
+                <div class="info-content-ship">
+                    <div class="ship__left">
+                        <h3 class="ship__left-title">Đơn vị vận chuyển Viettel Post</h3>
+                        <p class="ship__left-date">Ngày nhận hàng vào: 16/5/2024</p>
+                    </div>
+                    <div class="ship__right">
+                        <div class="ship__right-price">15.000 ₫</div>
+                        <div class="ship__right-action">Áp dụng</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pay">
+                <div class="title">Phương pháp thanh toán</div>
+                <div class="pay-content">
+                    <a href="./pay.html" class="pay-item">
+                        <div class="pay-item__button">
+                            <div class="pay-item__button-content"></div>
+                        </div>
+                        <div class="pay-item__content">
+                            <div class="pay-item__content-title">Thanh toán khi nhận hàng</div>
+                            <div class="pay-item__content-subtitle">Thanh toán trực tiếp với nhân viên giao hàng khi nhận hàng</div>
+                        </div>
+                    </a>
+                    <a href="./pay-width-bank.html" class="pay-item">
+                        <div class="pay-item__button">
+                            <div class="pay-item__button-content"></div>
+                        </div>
+                        <div class="pay-item__content">
+                            <div class="pay-item__content-title">Thanh toán bằng ngân hàng điện tử</div>
+                            <div class="pay-item__content-subtitle">Hỗ trợ các ngân hàng: Vietcombank, VPBank, MB Bank,...</div>
+                        </div>
+                    </a>
+                    <a href="./pay-with-wallet.html" class="pay-item active">
+                        <div class="pay-item__button">
+                            <div class="pay-item__button-content"></div>
+                        </div>
+                        <div class="pay-item__content">
+                            <div class="pay-item__content-title">Thanh toán bằng ví điện tử</div>
+                            <div class="pay-item__content-subtitle">Hỗ trợ các ví điện tử: Momo, ZaloPay,...</div>
+                        </div>
+                    </a>
+                    <div href="./pay-with-wallet.html" class="qr-pay-with-bank">
+                        <div class="select-wallet">
+                            <form>
+                                <div class="select-wallet-item">
+                                    <input type="radio" name="wallet"/> 
+                                    Momo
+                                </div>
+                                <div class="select-wallet-item">
+                                    <input type="radio" name="wallet"/> 
+                                    Shoppe Pay
+                                </div>
+                                <div class="select-wallet-item">
+                                    <input type="radio" name="wallet"/> 
+                                    VN Pay
+                                </div>
+                                <div class="select-wallet-item">
+                                    <input type="radio" name="wallet"/> 
+                                    Zalo Pay
+                                </div>
+                            </form>
+                        </div>
+                        <img src="./images/qr.jpg"/>
+                        <div class="qr-pay-with-bank-title">Quét QR để thanh toán</div>
+                    </div>
+                </div>
+            </div>
+            <div class="left-button">
+                <button class="button-back">Quay lại giỏ hàng</button>
+                <button class="button-accept">Hoàn tất đơn hàng</button>
+            </div>
+          </div>
+          <div class="pay-right">
+            <div class="title">Thông tin người dùng</div>
+            <div class="pay-left-item">
+              <img src="./images/add-to-card/product-1.png"/>
+              <div class="item-content">
+                <div class="item-content__wrapper">
+                  <div class="item-header">
+                    <h3 class="item-header-title">ÁO KHOÁC CARGIDAN STICKER LOTSO</h3>
+                    <i class="fa-regular fa-xmark"></i>
+                  </div>
+                  <div class="item-size"> Size: L, Màu: Trắng</div>
+                </div>
+                <div class="item-footer">
+                  <div class="item-footer-quantity">
+                    <div class="quantity-wrapper">
+                      <input type="number" value="1" min="1" max="100">
+                      <div class="quantity-spin-button">
+                        <button onclick="increaseValue()" class="plus">
+                          <i class="fa-solid fa-caret-up"></i></button>
+                        </button>
+                        <button onclick="decreaseValue()" class="minus">
+                          <i class="fa-solid fa-caret-down"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-footer-price">899.000 ₫</div>
+                </div>
+              </div>
+            </div>
+            <div class="code-discount">
+              <div class="code-discount-wrapper">
+                <input type="text" value="Mã giảm giá"/>
+                <button class="code-discount-button">Áp dụng</button>
+              </div>
+              <div class="see-code-discount">
+                <i class="fa-regular fa-badge-percent"></i>
+                Xem thêm mã giảm giá
+              </div>
+            </div>
+            <div class="price-product">
+              <div class="price-product-header">
+                <div class="list-before-total">
+                  <div class="title-before-total">Tạm tính:</div>
+                  <div class="before-total-content">899.000 ₫</div>
+                </div>
+                <div class="list-before-total">
+                  <div class="title-before-total">Mã giảm giá:</div>
+                  <div class="before-total-content">Chưa áp dụng</div>
+                </div>
+                <div class="list-before-total">
+                  <div class="title-before-total">Phí vận chuyển:</div>
+                  <div class="before-total-content">15.500 ₫</div>
+                </div>
+              </div>
+              <div class="price-product-footer">
+                <div class="title-total">Tổng cộng</div>
+                <div class="price-total">914.500 ₫</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="sub-footer">
+      <div class="container">
+        <div class="notifications__wrapper">
+          <div class="notifications__header">
+            <div class="notifications__header-title">THƯ THÔNG BÁO</div>
+            <div class="notifications__header-content">Nhận giảm giá 30%</div>
+            <div class="notifications__header-subtitle">
+              30% off trên toàn bộ đơn hàng của bạn khi nhập mã khuyến mãi.
+            </div>
+          </div>
+          <div class="notifications__content">
+            <input placeholder="Nhập lại Email của bạn..." />
+            <a href="#"><button>ĐĂNG KÝ</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info">
+        <div class="container">
+          <div class="footer-info__wrapper">
+            <p class="footer-info__desc">
+              © Copyright 2020 BOO. All Rights Reserved.
+            </p>
+            <div class="list-network">
+              <div class="list-network__item">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="list-network__item">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="list-network__item">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="list-network__item">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var scrollableElement = document.getElementById('header-web');
+
+// Thêm bộ lắng nghe sự kiện cuộn
+window.addEventListener('scroll', function() {
+  // Kiểm tra vị trí cuộn, ví dụ: 200px từ đầu trang
+  if (window.scrollY > 200) {
+      // Nếu cuộn được hơn 200px, thêm lớp 'added-class'
+      scrollableElement.classList.add('scroll-header');
+  } else {
+      // Nếu không, loại bỏ lớp 'added-class'
+      scrollableElement.classList.remove('scroll-header');
+  }
+});
+      //mobile search
+      var buttonShowSearchMobile = document.getElementById("iconSearch");
+      var buttonCloseSearchMobile = document.getElementById("iconCloseSearch");
+
+      var showInputSearchMobile = document.getElementById("inputSearchMobile");
+
+      buttonShowSearchMobile.addEventListener("click", function () {
+        showInputSearchMobile.classList.add("show-search-mobile");
+      });
+
+      buttonCloseSearchMobile.addEventListener("click", function () {
+        showInputSearchMobile.classList.remove("show-search-mobile");
+      });
+      //mobile menu
+      var buttonShowMenuMobile = document.getElementById("iconMenuMobile");
+      var buttonCloseMenuMobile = document.getElementById(
+        "iconCloseMenuMobile"
+      );
+
+      var showMenuMobile = document.getElementById("menuMoBile");
+
+      buttonShowMenuMobile.addEventListener("click", function () {
+        showMenuMobile.classList.add("show-menu-mobile");
+      });
+
+      buttonCloseMenuMobile.addEventListener("click", function () {
+        showMenuMobile.classList.remove("show-menu-mobile");
+      });
+
+      //swiper product
+      var swiper = new Swiper(".mySwiperProduct", {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          318: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            slidesPerGroup: 2,
+          },
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            slidesPerGroup: 2,
+          },
+          575: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerGroup: 3,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerGroup: 3,
+          },
+          900: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            slidesPerGroup: 4,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

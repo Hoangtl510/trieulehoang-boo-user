@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOO</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://redpervn.github.io/fa/css/all.min.css?fbclid=IwAR2VnCVu3fZyZybhEPHqAoRF9xJd2ZJZ43gCLfQokvfv6X5YJv1_V3HNSyw"
+    />
+    <link />
+    <!-- link css -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="header" id="header-web">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="search">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <i
+              class="icon-search fa-solid fa-magnifying-glass"
+              id="iconSearch"
+            ></i>
+            <i
+              class="fa-solid fa-bars icon-show-menu-mobile"
+              id="iconMenuMobile"
+            ></i>
+          </div>
+          <div class="search-mobile" id="inputSearchMobile">
+            <i class="fa-solid fa-xmark" id="iconCloseSearch"></i>
+            <input type="text" placeholder="Tìm kiếm..." />
+          </div>
+          <div class="logo">
+            <img src="/images/logo-boo.png" alt="logo" />
+          </div>
+          <div class="action">
+            <a href="./wish-list.html" class="icon-link"><i class="fa-solid fa-heart"></i></a>
+            <a href="./add-to-card.html" class="icon-link"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="./profile.html" class="icon-link">
+              <img src="./images/profile/avatar.png"/>
+            </a>
+          </div>
+        </div>
+        <div class="header-menu" id="menuMoBile">
+          <div class="icon-close-menu-mobile">
+            <i class="fa-solid fa-xmark" id="iconCloseMenuMobile"></i>
+          </div>
+          <a href="/home.html">Trang chủ</a>
+          <div class="diamond diamond-menu"></div>
+          <a href="./about-us.html">Về chúng tôi</a>
+          <div class="diamond diamond-menu"></div>
+          <a href="/product.html" class="menu-active">Sản phẩm</a>
+          <div class="diamond diamond-menu"></div>
+          <a href="./blog.html">Blog</a>
+          <div class="diamond diamond-menu"></div>
+          <a href="./contact.html">Liên hệ</a>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div class="product-banner">
+            <div class="container">
+                <div class="banner-content">
+                    <div class="banner-content__item">
+                        <img src="./images/product/brand-1.png"/>
+                        <div class="item__title">Hoan hỷ Funnỷ</div>
+                    </div>
+                    <div class="banner-content__item">
+                        <img src="./images/product/brand-2.png"/>
+                        <div class="item__title">Losto | Boo-strawberry</div>
+                    </div>
+                    <div class="banner-content__item">
+                        <img src="./images/product/brand-3.png"/>
+                        <div class="item__title">Everyday life  in denim</div>
+                    </div>
+                    <div class="banner-content__item">
+                        <img src="./images/product/brand-4.png"/>
+                        <div class="item__title">Boo essentials</div>
+                    </div>
+                    <div class="banner-content__item">
+                        <img src="./images/product/brand-5.png"/>
+                        <div class="item__title">Marvel go VN</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+          <div class="product-content">
+            <div class="product-content__title">
+              Hoan hỷ Funnỷ
+            </div>
+            <div class="product-content__main">
+              <div class="product-main__left">
+                <div class="product-main__left--input">
+                  <input type="text" placeholder="Tìm kiếm sản phẩm..." />
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="product-main__left--item filter-price">
+                  <div class="item__title">
+                    <div class="icon-filter diamond"></div>
+                    <h3 class="title">Tìm theo giá</h3>
+                  </div>
+                  <div class="item__content">
+                  <select id="price" name="price">
+                    <option value="" disabled selected>Chọn khoảng giá</option>
+                    <option value="dưới 500.000 ₫">Dưới 500.000 ₫</option>
+                    <option value="500.000 ₫ - 1.000.000 ₫">500.000 ₫ - 1.000.000 ₫</option>
+                    <option value="1.000.000 ₫ - 1.500.000 ₫">1.000.000 ₫ - 1.500.000 ₫</option>
+                    <option value="trên 1.500.000 ₫">Trên 1.500.000 ₫</option>
+                  </select>
+                  </div>
+                </div>
+                <div class="product-main__left--item">
+                  <div class="item__title">
+                    <div class="icon-filter diamond"></div>
+                    <h3 class="title">Tìm theo màu</h3>
+                  </div>
+                  <div class="item__content">
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-color">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        Đen
+                      </div>
+                      <div class="number">(4)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-color">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        Xanh dương
+                      </div>
+                      <div class="number">(3)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-color">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        Vàng nhạt
+                      </div>
+                      <div class="number">(1)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-color">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        Xám
+                      </div>
+                      <div class="number">(3)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-color">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        Xanh lá
+                      </div>
+                      <div class="number">(1)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-color">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        Nâu
+                      </div>
+                      <div class="number">(5)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-color">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        Đỏ
+                      </div>
+                      <div class="number">(2)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-color">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        Vàng
+                      </div>
+                      <div class="number">(2)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-main__left--item">
+                  <div class="item__title">
+                    <div class="icon-filter diamond"></div>
+                    <h3 class="title">Tìm theo màu</h3>
+                  </div>
+                  <div class="item__content">
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-size">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="size">XS</div>
+                      </div>
+                      <div class="number">(1)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-size">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="size">S</div>
+                      </div>
+                      <div class="number">(4)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-size">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="size">M</div>
+                      </div>
+                      <div class="number">(2)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-size">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="size">L</div>
+                      </div>
+                      <div class="number">(3)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-size">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="size">XL</div>
+                      </div>
+                      <div class="number">(5)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-size">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="size">XXL</div>
+                      </div>
+                      <div class="number">(10)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-main__left--item">
+                  <div class="item__title">
+                    <div class="icon-filter diamond"></div>
+                    <h3 class="title">Danh mục sản phẩm</h3>
+                  </div>
+                  <div class="item__content">
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-size">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="size">Áo phông</div>
+                      </div>
+                      <div class="number">(11)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-size">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="size">Quần</div>
+                      </div>
+                      <div class="number">(9)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-size">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="size">Váy</div>
+                      </div>
+                      <div class="number">(6)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-size">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="size">Áo khoác</div>
+                      </div>
+                      <div class="number">(6)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-size">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="size">Mũ</div>
+                      </div>
+                      <div class="number">(7)</div>
+                    </div>
+                    <div class="item__list-content">
+                      <div class="item-color">
+                        <div class="check-box-size">
+                          <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="size">Balo</div>
+                      </div>
+                      <div class="number">(6)</div>
+                    </div>
+                  </div>
+                </div>
+             
+              </div>
+              <div class="product-main__right">
+                <a href="./detail-product.html" class="product-item">
+                  <i class="icon-hear fa-regular fa-heart"></i>
+                  <div class="product-item__image">
+                    <img src="./images/product/product-1.png"/>
+                    <div class="list-color">
+                      <div class="color">
+                        <div class="color-1"></div>
+                      </div>
+                      <div class="color">
+                        <div class="color-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="product-item__name">ÁO NỈ KHÔNG MŨ LOGO HOAN HỶ IN NGỰC OVERFIT</h3>
+                  <div class="product-item__price">
+                    <div class="old-price"></div>
+                    <div class="new-price">899.000 ₫</div>
+                  </div>
+                  <div class="product-item__rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </a>
+                <div class="product-item">
+                  <i class="icon-hear fa-regular fa-heart"></i>
+                  <div class="product-item__image">
+                    <img src="./images/product/product-2.png"/>
+                    <div class="list-color">
+                      <div class="color">
+                        <div class="color-1"></div>
+                      </div>
+                      <div class="color">
+                        <div class="color-2"></div>
+                      </div>
+                    </div>
+                    <div class="sale">-14%</div>
+                  </div>
+                  <h3 class="product-item__name">ÁO PHÔNG LOGO HOAN HỶ IN NGỰC REGULAR</h3>
+                  <div class="product-item__price">
+                    <div class="old-price">399.000 ₫</div>
+                    <div class="new-price">55.860 ₫</div>
+                  </div>
+                  <div class="product-item__rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <i class="icon-hear fa-regular fa-heart"></i>
+                  <div class="product-item__image">
+                    <img src="./images/product/product-3.png"/>
+                    <div class="list-color">
+                      <div class="color">
+                        <div class="color-1"></div>
+                      </div>
+                      <div class="color">
+                        <div class="color-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="product-item__name">ÁO PHÔNG RỒNG HOAN HỶ IN NGỰC REGULAR</h3>
+                  <div class="product-item__price">
+                    <div class="old-price"></div>
+                    <div class="new-price">499.000 ₫</div>
+                  </div>
+                  <div class="product-item__rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <i class="icon-hear fa-regular fa-heart"></i>
+                  <div class="product-item__image">
+                    <img src="./images/product/product-4.png"/>
+                    <div class="list-color">
+                      <div class="color">
+                        <div class="color-1"></div>
+                      </div>
+                      <div class="color">
+                        <div class="color-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="product-item__name">ÁO PHÔNG ĐẦU RỒNG HOAN HỶ REGULAR</h3>
+                  <div class="product-item__price">
+                    <div class="old-price"></div>
+                    <div class="new-price">499.000 ₫</div>
+                  </div>
+                  <div class="product-item__rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <i class="icon-hear fa-regular fa-heart"></i>
+                  <div class="product-item__image">
+                    <img src="./images/product/product-5.png"/>
+                    <div class="list-color">
+                      <div class="color">
+                        <div class="color-1"></div>
+                      </div>
+                      <div class="color">
+                        <div class="color-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="product-item__name">ÁO KHOÁC NỈ KHÓA MŨ ĐẦU RỒNG HOAN HỶ OVERFIT</h3>
+                  <div class="product-item__price">
+                    <div class="old-price"></div>
+                    <div class="new-price">1.299.000 ₫</div>
+                  </div>
+                  <div class="product-item__rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <i class="icon-hear fa-regular fa-heart"></i>
+                  <div class="product-item__image">
+                    <img src="./images/product/product-6.png"/>
+                    <div class="list-color">
+                      <div class="color">
+                        <div class="color-1"></div>
+                      </div>
+                      <div class="color">
+                        <div class="color-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="product-item__name">ÁO NỈ MŨ LOGO HOAN HỶ OVERFIT</h3>
+                  <div class="product-item__price">
+                    <div class="old-price"></div>
+                    <div class="new-price">999.000 ₫</div>
+                  </div>
+                  <div class="product-item__rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <i class="icon-hear fa-regular fa-heart"></i>
+                  <div class="product-item__image">
+                    <img src="./images/product/product-7.png"/>
+                    <div class="list-color">
+                      <div class="color">
+                        <div class="color-1"></div>
+                      </div>
+                      <div class="color">
+                        <div class="color-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="product-item__name">ÁO NIT KHÔNG MŨ BIG GRAPHIC HOAN HỶ OVERFIT</h3>
+                  <div class="product-item__price">
+                    <div class="old-price"></div>
+                    <div class="new-price">599.000 ₫</div>
+                  </div>
+                  <div class="product-item__rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <i class="icon-hear fa-regular fa-heart"></i>
+                  <div class="product-item__image">
+                    <img src="./images/product/product-8.png"/>
+                    <div class="list-color">
+                      <div class="color">
+                        <div class="color-1"></div>
+                      </div>
+                      <div class="color">
+                        <div class="color-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="product-item__name">CHÂN VÁY MIDI XẺ SAU HOAN HỶ</h3>
+                  <div class="product-item__price">
+                    <div class="old-price"></div>
+                    <div class="new-price">799.000 ₫</div>
+                  </div>
+                  <div class="product-item__rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <i class="icon-hear fa-regular fa-heart"></i>
+                  <div class="product-item__image">
+                    <img src="./images/product/product-9.png"/>
+                    <div class="list-color">
+                      <div class="color">
+                        <div class="color-1"></div>
+                      </div>
+                      <div class="color">
+                        <div class="color-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="product-item__name">ÁO BABYTEE LOGO HOAN HỶ</h3>
+                  <div class="product-item__price">
+                    <div class="old-price"></div>
+                    <div class="new-price">399.000 ₫</div>
+                  </div>
+                  <div class="product-item__rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <i class="icon-hear fa-regular fa-heart"></i>
+                  <div class="product-item__image">
+                    <img src="./images/product/product-10.png"/>
+                    <div class="list-color">
+                      <div class="color">
+                        <div class="color-1"></div>
+                      </div>
+                      <div class="color">
+                        <div class="color-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="product-item__name">ÁO PHÔNG LOGO HOAN HỶ THÂN SAU REGULAR</h3>
+                  <div class="product-item__price">
+                    <div class="old-price"></div>
+                    <div class="new-price">499.000 ₫</div>
+                  </div>
+                  <div class="product-item__rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <i class="icon-hear fa-regular fa-heart"></i>
+                  <div class="product-item__image">
+                    <img src="./images/product/product-11.png"/>
+                    <div class="list-color">
+                      <div class="color">
+                        <div class="color-1"></div>
+                      </div>
+                      <div class="color">
+                        <div class="color-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="product-item__name">ÁO PHÔNG LOGO VÀ HÌNH RỒNG HOAN HỶ REGULAR</h3>
+                  <div class="product-item__price">
+                    <div class="old-price"></div>
+                    <div class="new-price">499.000 ₫</div>
+                  </div>
+                  <div class="product-item__rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <i class="icon-hear fa-regular fa-heart"></i>
+                  <div class="product-item__image">
+                    <img src="./images/product/product-12.png"/>
+                    <div class="list-color">
+                      <div class="color">
+                        <div class="color-1"></div>
+                      </div>
+                      <div class="color">
+                        <div class="color-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="product-item__name">MŨ BASEBALL LOGO HOAN HỶ</h3>
+                  <div class="product-item__price">
+                    <div class="old-price"></div>
+                    <div class="new-price">299.000 ₫</div>
+                  </div>
+                  <div class="product-item__rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="list-pagination">
+                  <div class="number number-actice">1</div>
+                  <div class="number">2</div>
+                  <div class="number"><i class="fa-solid fa-chevron-right"></i></div>
+                  <div class="change-show">Hiển thị 1-12 trên tổng số 20 kết quả</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer class="sub-footer">
+      <div class="container">
+        <div class="notifications__wrapper">
+          <div class="notifications__header">
+            <div class="notifications__header-title">THƯ THÔNG BÁO</div>
+            <div class="notifications__header-content">Nhận giảm giá 30%</div>
+            <div class="notifications__header-subtitle">30% off trên toàn bộ đơn hàng của bạn khi nhập mã khuyến mãi.</div>
+          </div>
+          <div class="notifications__content">
+            <input placeholder="Nhập lại Email của bạn..." />
+            <a href="#"><button>ĐĂNG KÝ</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info">
+        <div class="container">
+          <div class="footer-info__wrapper">
+            <p class="footer-info__desc">
+              © Copyright 2020 BOO. All Rights Reserved.
+            </p>
+            <div class="list-network">
+              <div class="list-network__item">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="list-network__item">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="list-network__item">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="list-network__item">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var scrollableElement = document.getElementById('header-web');
+
+      // Thêm bộ lắng nghe sự kiện cuộn
+      window.addEventListener('scroll', function() {
+        // Kiểm tra vị trí cuộn, ví dụ: 200px từ đầu trang
+        if (window.scrollY > 200) {
+            // Nếu cuộn được hơn 200px, thêm lớp 'added-class'
+            scrollableElement.classList.add('scroll-header');
+        } else {
+            // Nếu không, loại bỏ lớp 'added-class'
+            scrollableElement.classList.remove('scroll-header');
+        }
+      });
+        //mobile search
+        var buttonShowSearchMobile = document.getElementById("iconSearch");
+        var buttonCloseSearchMobile = document.getElementById("iconCloseSearch");
+  
+        
+        var showInputSearchMobile = document.getElementById("inputSearchMobile");
+  
+  
+        buttonShowSearchMobile.addEventListener("click", function() {
+          showInputSearchMobile.classList.add("show-search-mobile");
+        });
+        
+        buttonCloseSearchMobile.addEventListener("click", function() {
+          showInputSearchMobile.classList.remove("show-search-mobile");
+        });
+        //mobile menu
+        var buttonShowMenuMobile = document.getElementById("iconMenuMobile");
+        var buttonCloseMenuMobile = document.getElementById("iconCloseMenuMobile");
+  
+        
+        var showMenuMobile = document.getElementById("menuMoBile");
+  
+  
+        buttonShowMenuMobile.addEventListener("click", function() {
+          showMenuMobile.classList.add("show-menu-mobile");
+        });
+        
+        buttonCloseMenuMobile.addEventListener("click", function() {
+          showMenuMobile.classList.remove("show-menu-mobile");
+        });
+      </script>
+  </body>
+</html>

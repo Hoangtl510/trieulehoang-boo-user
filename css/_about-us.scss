@@ -1,0 +1,121 @@
+.about-us__who-we-are {
+    margin-top: 70px;
+    display: flex;
+    gap: 45px;
+    @media (max-width: 989px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .who-we-are__image {
+        width: calc(50% - 22px);
+        @media (max-width: 989px) {
+            width: 100%;
+        }
+        > img {
+            @media (max-width: 989px) {
+                width: 100%;
+            }
+        }
+    }
+    .who-we-are__content {
+        width: calc(50% - 22px);
+        @media (max-width: 989px) {
+            width: 100%;
+        }
+        .who-we-are__content--title {
+            padding-left: 20px;
+            border-left: 1px solid #CF9163;
+            font-size: 36px;
+        }
+        .who-we-are__content--subtitle {
+            font-size: 18px;
+            color: #666666;
+            font-weight: 500;
+            &.who-we-are__content--subtitle-first {
+                margin-top: 30px;
+            }
+            &.who-we-are__content--subtitle-second {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+.about-us__meet-team {
+    margin-top: 90px;
+    .about-us__meet-team--header {
+        text-align: center;
+        .meet-team__header--title {
+            font-size: 36px;
+            @media (max-width: 574px) {
+                font-size: 28px;
+            }
+            @media (max-width: 489px) {
+                font-size: 24px;
+            }
+        }
+        .meet-team__header--subtitle {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #666666;
+        }
+    }
+    .myMeetTeam {
+        margin-top: 50px;
+        .meet-team-item {
+            .meet-team-item__image {
+                position: relative;
+                .meet-item__list-network {
+                    display: flex;
+                    gap: 16px;
+                    justify-content: center;
+                    margin-top: -33px;
+                    @media (max-width: 1023px) {
+                        margin-top: -28px;
+                    }
+                    @media (max-width: 989px) {
+                        margin-top: -25px;
+                    }
+                    .meet-item__list-network--item {
+                        width: 56px;
+                        height: 56px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: white;
+                        border-radius: 50%;
+                        @media (max-width: 1023px) {
+                            width: 46px;
+                            height: 46px;
+                        }
+                        @media (max-width: 989px) {
+                            width: 40px;
+                            height: 40px;
+                        }
+                        > i {
+                            font-size: 24px;
+                            @media (max-width: 1023px) {
+                                font-size: 20px;
+                            }
+                            @media (max-width: 989px) {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+            .meet-team-item__content {
+                margin-top: 24px;
+                text-align: center;
+                .meet-team-item__content--name {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                .meet-team-item__content--status {
+                    font-size: 18px;
+                    color: #666666;
+                    margin-top: 8px;
+                } 
+            }
+        }
+    }
+}

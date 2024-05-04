@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOO</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://redpervn.github.io/fa/css/all.min.css?fbclid=IwAR2VnCVu3fZyZybhEPHqAoRF9xJd2ZJZ43gCLfQokvfv6X5YJv1_V3HNSyw"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link />
+    <!-- link css -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="header" id="header-web">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="search">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <i
+              class="icon-search fa-solid fa-magnifying-glass"
+              id="iconSearch"
+            ></i>
+            <i
+              class="fa-solid fa-bars icon-show-menu-mobile"
+              id="iconMenuMobile"
+            ></i>
+          </div>
+          <div class="search-mobile" id="inputSearchMobile">
+            <i class="fa-solid fa-xmark" id="iconCloseSearch"></i>
+            <input type="text" placeholder="Tìm kiếm..." />
+          </div>
+          <div class="logo">
+            <img src="/images/logo-boo.png" alt="logo" />
+          </div>
+          <div class="action">
+            <a href="./wish-list.html" class="icon-link"><i class="fa-solid fa-heart"></i></a>
+            <a href="./add-to-card.html" class="icon-link"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="./profile.html" class="icon-link">
+              <img src="./images/profile/avatar.png"/>
+            </a>
+          </div>
+        </div>
+        <div class="header-menu" id="menuMoBile">
+          <div class="icon-close-menu-mobile">
+            <i class="fa-solid fa-xmark" id="iconCloseMenuMobile"></i>
+          </div>
+          <a href="/home.html">Trang chủ</a>
+          <div class="diamond diamond-menu"></div>
+          <a href="./about-us.html">Về chúng tôi</a>
+          <div class="diamond diamond-menu"></div>
+          <a href="/product.html">Sản phẩm</a>
+          <div class="diamond diamond-menu"></div>
+          <a href="./blog.html">Blog</a>
+          <div class="diamond diamond-menu"></div>
+          <a href="./contact.html">Liên hệ</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="default-banner">
+        <img src="./images/banner.png"/>
+        <div class="default-banner__title">Giỏ hàng</div>
+      </div>
+      <div class="container">
+        <div class="cart-table">
+            <table>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>Sản phẩm</td>
+                        <td>Giá</td>
+                        <td>Số lượng</td>
+                        <td>Tổng tiền</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="card-product-image">
+                                <i class="fa-regular fa-trash-can"></i>
+                                <img src="./images/add-to-card/product-1.png"/>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card-product-name">ÁO NỈ KHÔNG MŨ LOGO HOAN HỶ IN NGỰC OVERFIT</div>
+                        </td>
+                        <td>
+                            <div class="card-product-price">899.000 ₫</div>
+                        </td>
+                        <td>
+                          <div class="quantity">
+                            <div class="quantity-wrapper">
+                              <input type="number" value="1" min="1" max="100">
+                              <div class="quantity-spin-button">
+                                <button onclick="increaseValue()" class="plus">
+                                  <i class="fa-solid fa-caret-up"></i></button>
+                                </button>
+                                <button onclick="decreaseValue()" class="minus">
+                                  <i class="fa-solid fa-caret-down"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                            <div class="card-product-price">899.000 ₫</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <div class="code_discount">
+                                <input placeholder="Mã giảm giá" />
+                                <a href="#"><button>ÁP DỤNG</button></a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="cart-price">
+            <div class="cart-price__title">Tổng tiền giỏ hàng</div>
+            <table>
+                <tr>
+                    <td>
+                        <div class="table-cart-price__surcharge">
+                            <div class="surcharge-title">Phụ phí:</div>
+                            <div class="surcharge-number">0 ₫</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="table-cart-price__total">
+                            <div class="total-title">Tổng tiền:</div>
+                            <div class="total-number">899.000 ₫</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <a href="./pay.html" class="cart-price__pay">TIẾN HÀNH THANH TOÁN</a>
+        </div>
+        <div class="related-products">
+            <div class="related-products__title">
+                <h3>Sản phẩm liên quan</h3>
+                <div class="related-product__list-deco">
+                    <div class="related-product__deco-item diamond">
+                    </div>
+                    <div class="related-product__deco-item diamond">
+                    </div>
+                    <div class="related-product__deco-item diamond">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper swiperProduct mySwiperProduct">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide product-item">
+                    <img src="./images/add-to-card/related-product-1.png"/>
+                    <div class="product-item__content">
+                      <h4 class="product-name">ÁO PHÔNG SMAILL GRAPHIC DORAEMON LOOSE</h4>
+                      <div class="product-price">499.000 ₫</div>
+                      <div class="product-rate">
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <img src="./images/add-to-card/related-product-2.png"/>
+                    <div class="product-item__content">
+                      <h4 class="product-name">ÁO PHÔNG BIG GRAPHIC DORAEMON LOOSE</h4>
+                      <div class="product-price">499.000 ₫</div>
+                      <div class="product-rate">
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <img src="./images/add-to-card/related-product-3.png"/>
+                    <div class="product-item__content">
+                      <h4 class="product-name">QUẦN JEANS NỮ LOW-RISE LOTSO WIDE-LEG</h4>
+                      <div class="product-price">
+                        <span class="new-price">899.000 ₫</span>
+                      </div>
+                      <div class="product-rate">
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <img src="./images/add-to-card/related-product-4.png"/>
+                    <div class="product-item__content">
+                      <h4 class="product-name">QUẦN JEANS PARACHUTE CARGO STRAIGHT</h4>
+                      <div class="product-price">899.000 ₫</div>
+                      <div class="product-rate">
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <img src="./images/add-to-card/related-product-1.png"/>
+                    <div class="product-item__content">
+                      <h4 class="product-name">ÁO PHÔNG SMAILL GRAPHIC DORAEMON LOOSE</h4>
+                      <div class="product-price">499.000 ₫</div>
+                      <div class="product-rate">
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <img src="./images/add-to-card/related-product-2.png"/>
+                    <div class="product-item__content">
+                      <h4 class="product-name">ÁO PHÔNG BIG GRAPHIC DORAEMON LOOSE</h4>
+                      <div class="product-price">499.000 ₫</div>
+                      <div class="product-rate">
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <img src="./images/add-to-card/related-product-3.png"/>
+                    <div class="product-item__content">
+                      <h4 class="product-name">QUẦN JEANS NỮ LOW-RISE LOTSO WIDE-LEG</h4>
+                      <div class="product-price">
+                        <span class="new-price">899.000 ₫</span>
+                      </div>
+                      <div class="product-rate">
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <img src="./images/add-to-card/related-product-4.png"/>
+                    <div class="product-item__content">
+                      <h4 class="product-name">QUẦN JEANS PARACHUTE CARGO STRAIGHT</h4>
+                      <div class="product-price">899.000 ₫</div>
+                      <div class="product-rate">
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <img src="./images/add-to-card/related-product-1.png"/>
+                    <div class="product-item__content">
+                      <h4 class="product-name">ÁO PHÔNG SMAILL GRAPHIC DORAEMON LOOSE</h4>
+                      <div class="product-price">499.000 ₫</div>
+                      <div class="product-rate">
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <img src="./images/add-to-card/related-product-2.png"/>
+                    <div class="product-item__content">
+                      <h4 class="product-name">ÁO PHÔNG BIG GRAPHIC DORAEMON LOOSE</h4>
+                      <div class="product-price">499.000 ₫</div>
+                      <div class="product-rate">
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <img src="./images/add-to-card/related-product-3.png"/>
+                    <div class="product-item__content">
+                      <h4 class="product-name">QUẦN JEANS NỮ LOW-RISE LOTSO WIDE-LEG</h4>
+                      <div class="product-price">
+                        <span class="new-price">899.000 ₫</span>
+                      </div>
+                      <div class="product-rate">
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product-item">
+                    <img src="./images/add-to-card/related-product-4.png"/>
+                    <div class="product-item__content">
+                      <h4 class="product-name">QUẦN JEANS PARACHUTE CARGO STRAIGHT</h4>
+                      <div class="product-price">899.000 ₫</div>
+                      <div class="product-rate">
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                        <i class="fa-solid fa-star icon-rate"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-product"></div>
+              </div>
+          </div>
+      </div>
+    </main>
+    <footer class="sub-footer">
+      <div class="container">
+        <div class="notifications__wrapper">
+          <div class="notifications__header">
+            <div class="notifications__header-title">THƯ THÔNG BÁO</div>
+            <div class="notifications__header-content">Nhận giảm giá 30%</div>
+            <div class="notifications__header-subtitle">
+              30% off trên toàn bộ đơn hàng của bạn khi nhập mã khuyến mãi.
+            </div>
+          </div>
+          <div class="notifications__content">
+            <input placeholder="Nhập lại Email của bạn..." />
+            <a href="#"><button>ĐĂNG KÝ</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info">
+        <div class="container">
+          <div class="footer-info__wrapper">
+            <p class="footer-info__desc">
+              © Copyright 2020 BOO. All Rights Reserved.
+            </p>
+            <div class="list-network">
+              <div class="list-network__item">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="list-network__item">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="list-network__item">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="list-network__item">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+       var scrollableElement = document.getElementById('header-web');
+
+// Thêm bộ lắng nghe sự kiện cuộn
+window.addEventListener('scroll', function() {
+  // Kiểm tra vị trí cuộn, ví dụ: 200px từ đầu trang
+  if (window.scrollY > 200) {
+      // Nếu cuộn được hơn 200px, thêm lớp 'added-class'
+      scrollableElement.classList.add('scroll-header');
+  } else {
+      // Nếu không, loại bỏ lớp 'added-class'
+      scrollableElement.classList.remove('scroll-header');
+  }
+});
+      //mobile search
+      var buttonShowSearchMobile = document.getElementById("iconSearch");
+      var buttonCloseSearchMobile = document.getElementById("iconCloseSearch");
+
+      var showInputSearchMobile = document.getElementById("inputSearchMobile");
+
+      buttonShowSearchMobile.addEventListener("click", function () {
+        showInputSearchMobile.classList.add("show-search-mobile");
+      });
+
+      buttonCloseSearchMobile.addEventListener("click", function () {
+        showInputSearchMobile.classList.remove("show-search-mobile");
+      });
+      //mobile menu
+      var buttonShowMenuMobile = document.getElementById("iconMenuMobile");
+      var buttonCloseMenuMobile = document.getElementById(
+        "iconCloseMenuMobile"
+      );
+
+      var showMenuMobile = document.getElementById("menuMoBile");
+
+      buttonShowMenuMobile.addEventListener("click", function () {
+        showMenuMobile.classList.add("show-menu-mobile");
+      });
+
+      buttonCloseMenuMobile.addEventListener("click", function () {
+        showMenuMobile.classList.remove("show-menu-mobile");
+      });
+
+      //swiper product
+      var swiper = new Swiper(".mySwiperProduct", {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          318: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            slidesPerGroup: 2,
+          },
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            slidesPerGroup: 2,
+          },
+          575: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerGroup: 3,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerGroup: 3,
+          },
+          900: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            slidesPerGroup: 4,
+          },
+        },
+      });
+
+      function increaseValue() {
+        var value = parseInt(document.querySelector('input[type=number]').value, 10);
+        value = isNaN(value) ? 1 : value;
+        value++;
+        document.querySelector('input[type=number]').value = value;
+      }
+
+      function decreaseValue() {
+        var value = parseInt(document.querySelector('input[type=number]').value, 10);
+        value = isNaN(value) ? 1 : value;
+        value--;
+        document.querySelector('input[type=number]').value = value < 1 ? 1 : value;
+      }
+    </script>
+  </body>
+</html>

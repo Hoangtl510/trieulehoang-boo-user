@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOO</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://redpervn.github.io/fa/css/all.min.css?fbclid=IwAR2VnCVu3fZyZybhEPHqAoRF9xJd2ZJZ43gCLfQokvfv6X5YJv1_V3HNSyw"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link />
+    <!-- link css -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="auth">
+        <div class="auth-main">
+            <div class="auth-main__image">
+                <img src="/images/logo-boo.png" alt="logo" />
+            </div>
+            <div class="auth-main__content">
+                <h1 class="auth-main__content--title">
+                    Đăng ký
+                </h1>
+                <div class="auth-main__content--form">
+                    <div class="auth-form__input">
+                        <div class="auth-form__input--title">
+                            <h5 class="auth-form-title__name">Họ tên <span class="required-input">*</span></h5>
+                        </div>
+                        <input placeholder="Nhập họ tên của bạn..."/>
+                    </div>
+                    <div class="auth-form__input">
+                        <div class="auth-form__input--title">
+                            <h5 class="auth-form-title__name">Số điện thoại <span class="required-input">*</span></h5>
+                        </div>
+                        <input placeholder="Nhập số điện thoại của bạn..."/>
+                    </div>
+                    <div class="auth-form__input">
+                        <div class="auth-form__input--title">
+                            <h5 class="auth-form-title__name">Mật khẩu <span class="required-input">*</span></h5>
+                        </div>
+                        <input placeholder="Nhập mật khẩu của bạn..."/>
+                    </div>
+                    <div class="auth-form__input">
+                        <div class="auth-form__input--title">
+                            <h5 class="auth-form-title__name">Xác nhận mật khẩu <span class="required-input">*</span></h5>
+                        </div>
+                        <input placeholder="Nhập lại mật khẩu của bạn..."/>
+                    </div>
+                    <div class="auth-form__input">
+                        <div class="auth-form__input--title">
+                            <h5 class="auth-form-title__name">Quốc gia<span class="required-input">*</span></h5>
+                        </div>
+                        <select name="Quốc gia" id="Quốc gia">
+                            <option value="" disabled selected>Chọn quốc gia</option>
+                            <option value="Việt Nam">Việt Nam</option>
+                            <option value="Trung quốc">Trung Quốc</option>
+                            <option value="Mỹ">Mỹ</option>
+                            <option value="Hàn">Hàn</option>
+                        </select>
+                    </div>
+                    <div class="auth-form__input">
+                        <div class="auth-form__input--title">
+                            <h5 class="auth-form-title__name">Tỉnh/Thành phố<span class="required-input">*</span></h5>
+                        </div>
+                        <select name="Tỉnh/Thành phố" id="Tỉnh/Thành phố">
+                            <option value="" disabled selected>Chọn Tỉnh/Thành phố</option>
+                            <option value="Hà Nội">Hà Nội</option>
+                            <option value="Hải Phòng">Hải Phòng</option>
+                            <option value="Hà Nam">Hà Nam</option>
+                            <option value="Bắc Ninh">Bắc Ninh</option>
+                        </select>
+                    </div>
+                    <div class="auth-form__input">
+                        <div class="auth-form__input--title">
+                            <h5 class="auth-form-title__name">Quận/Huyện<span class="required-input">*</span></h5>
+                        </div>
+                        <select name="Quận/Huyện" id="Quận/Huyện">
+                            <option value="" disabled selected>Chọn Quận/Huyện</option>
+                            <option value="Thanh Trì">Thanh Trì</option>
+                            <option value="Hoàng Mai">Hoàng Mai</option>
+                            <option value="Đống Đa">Đống Đa</option>
+                            <option value="Tây Hồ">Tây Hồ</option>
+                        </select>
+                    </div>
+                    <div class="auth-form__input">
+                        <div class="auth-form__input--title">
+                            <h5 class="auth-form-title__name">Phường/Xã<span class="required-input">*</span></h5>
+                        </div>
+                        <select name="Phường/Xã" id="Phường/Xã">
+                            <option value="" disabled selected>Chọn Phường/Xã</option>
+                            <option value="Tả Thanh Oai">Tả Thanh Oai</option>
+                            <option value="Văn Điển">Văn Điển</option>
+                            <option value="Quỳnh Đô">Quỳnh Đô</option>
+                            <option value="Thanh Liệt">Thanh Liệt</option>
+                        </select>
+                    </div>
+                    <a href="./verify-otp.html" class="auth-form__button">
+                        Đăng ký
+                    </a>
+                    <div class="terms-and-services">
+                        <input type="checkbox"/>
+                        <p class="terms and services__title">Tôi đồng ý với <a href="#">Điều khoản</a> và <a href="#">Dịch Vụ</a></p>
+                    </div>
+                    <div class="auth-form__footer">
+                        Bạn đã có tài khoản? <a href="./sign-in.html" class="auth-form-footer-subtitle">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="auth-image">
+            <img src="./images/background-auth.png"/>
+        </div>
+    </div>
+  </body>
+</html>

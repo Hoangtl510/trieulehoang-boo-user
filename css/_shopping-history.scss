@@ -1,0 +1,225 @@
+.profile {
+    .profile-main {
+        .shopping-history-main {
+            width: calc(80% - 20px);
+            @media (max-width: 1279px) {
+                width: calc(75% - 20px);
+            }
+            @media (max-width: 1023px) {
+                width: calc(70% - 10px);
+            }
+            @media (max-width: 767px) {
+                width: calc(65% - 10px);
+            }
+            @media (max-width: 575px) {
+                width: 100%;
+            }
+            .shopping-history-main__title {
+                font-size: 36px;
+                font-weight: 500;
+                @media (max-width: 1279px) {
+                    font-size: 32px;
+                }
+                @media (max-width: 1023px) {
+                    font-size: 28px;
+                }
+                @media (max-width: 767px) {
+                    font-size: 26px;
+                }
+            }
+            .shopping-history-main__content {
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                .shopping-history-main__content--item {
+                    .shopping-history-main__item--product {
+                        padding: 25px;
+                        border: 1px solid #989898;
+                        @media (max-width: 767px) {
+                            padding: 15px;
+                        }
+                        .shopping-history-product__id {
+                            font-size: 20px;
+                            font-weight: 500;
+                            @media (max-width: 1199px) {
+                                font-size: 18px;
+                            }
+                            @media (max-width: 767px) {
+                                font-size: 16px;
+                            }
+                        }
+                        .shopping-history-product__date {
+                            margin-top: 10px;
+                            font-size: 16px;
+                            color: #989898;
+                            font-weight: 400;
+                            @media (max-width: 1199px) {
+                                font-size: 14px;
+                            }
+                            @media (max-width: 767px) {
+                                font-size: 12px;
+                            }
+                            @media (max-width: 489px) {
+                                font-size: 10px;
+                            }
+                            .shopping-history-product__date-product--title {
+                                font-weight: 700;
+                            }
+                        }
+                        .shopping-history-product__main {
+                            margin-top: 10px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 24px;
+                            @media (max-width: 767px) {
+                                gap: 15px;
+                            }
+                            @media (max-width: 489px) {
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                            .shopping-history-product__main-img {
+                                width: 120px;
+                                height: 120px;
+                                object-fit: cover;
+                                @media (max-width: 767px) {
+                                    width: 90px;
+                                    height: 90px;
+                                }
+                            }
+                            .shopping-history-product__main-content {
+                                .shopping-history-product__main-content--name {
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    @media (max-width: 1199px) {
+                                        font-size: 14px;
+                                    }
+                                    @media (max-width: 767px) {
+                                        font-size: 12px;
+                                    }
+                                    @media (max-width: 489px) {
+                                        text-align: center;
+                                    }
+                                }
+                                .shopping-history-product__main-content--size {
+                                    margin-top: 12px;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    color: #8A929E;
+                                    @media (max-width: 1199px) {
+                                        font-size: 12px;
+                                    }
+                                    @media (max-width: 489px) {
+                                        text-align: center;
+                                    }
+                                }
+                                .shopping-history-product__main-content--footer {
+                                    margin-top: 28px;
+                                    display: flex;
+                                    gap: 24px;
+                                    align-items: center;
+                                    @media (max-width: 767px) {
+                                        margin-top: 15px;
+                                    }
+                                    @media (max-width: 489px) {
+                                        justify-content: center;
+                                    }
+                                    .shopping-history-product__qty {
+                                        border: 1px solid #DBDDE1;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        color: black;
+                                        font-size: 14px;
+                                        width: 36px;
+                                        height: 36px;
+                                        font-weight: 500;
+                                        @media (max-width: 1199px) {
+                                            font-size: 12px;
+                                        }
+                                        @media (max-width: 767px) {
+                                            width: 28px;
+                                            height: 28px;
+                                        }
+                                    }   
+                                    .shopping-history-product__price {
+                                        color: #CF9163;
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                        @media (max-width: 1199px) {
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                            .shopping-history-product__main-footer {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                @media (max-width: 989px) {
+                                    flex-wrap: wrap;
+                                    gap: 5px;
+                                }
+                                @media (max-width: 479px) {
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                                .shopping-history-product__footer-left {
+                                    font-size: 16px;
+                                    color: black;
+                                    display: flex;
+                                    gap: 5px;
+                                    @media (max-width: 989px) {
+                                        width: 100%;
+                                        font-size: 14px;
+                                    }
+                                    .shopping-history-product__footer-left--subtitle {
+                                        color: #388F22;
+                                    }
+                                }
+                                .shopping-history-product__footer-right {
+                                    > button {
+                                        width: 136px;
+                                        height: 38px;
+                                        color: white;
+                                        background-color: #CF2E2E;
+                                        border: none;
+                                        border-radius: 5px;
+                                        font-size: 16px;
+                                        @media (max-width: 989px) {
+                                            font-size: 14px;
+                                            width: 126px;
+                                            height: 32px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .shopping-history-product__footer {
+                        padding: 15px 25px;
+                        display: flex;
+                        justify-content: space-between;
+                        border: 1px solid #989898;
+                        border-top: unset;
+                        @media (max-width: 767px) {
+                            padding: 15px;
+                        }
+                        .shopping-history-product__footer--title {
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: black;
+                        }
+                        .shopping-history-product__footer--total {
+                            color: #AE7043;
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
